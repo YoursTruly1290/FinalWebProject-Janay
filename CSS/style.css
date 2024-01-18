@@ -3,29 +3,28 @@
 }
 body {
   margin: 0;
+  background-color: #E7DED0;
 }
 
 nav {
   overflow: hidden;
   position: fixed;
-  margin-top: -5%;
+  margin-top: 0%;
   display: none;
-  width: 10%;
+  width: 10.3%;
   height: 95%;
-  background-color: #8B6B5A;
-  z-index: -9;
-  /* border-top-right-radius: 250px;
-  border-top-left-radius: 250px; */
+  background-color: #A89C94;
+  z-index: -1;
+  border-top-right-radius: 250px;
+  border-top-left-radius: 250px;
   animation: dropDown 0.5s ease;
-}
-nav.active {
-  height: 150px;
+  animation-fill-mode: forwards;
 }
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  margin-top: 150%;
+  margin-top: 120%;
 }
 
 li {
@@ -34,7 +33,7 @@ li {
 
 a {
   display: block;
-  color: #2B1B18;
+  color: #3E2723;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -48,10 +47,12 @@ a:hover {
 
 .logo {
   cursor: pointer;
+  position: fixed;
   border-radius: 100px;
-  z-index: 1000;
+  z-index: 100;
   top: 0;
   left: 0;
+  border: 3px #A89C94 solid;
 }
 
 @keyframes rotateAnimation {
@@ -65,10 +66,11 @@ a:hover {
 
 @keyframes dropDown {
   from{
-    height: 0%;
+    height: 10%;
   }
   to{
     height: 100%;
+
   }
 }
 .logo.rotate {
@@ -76,9 +78,15 @@ a:hover {
 }
 
 .search{
-  z-index: -10;
+  position: fixed;
+  z-index: -100;
   width: 100%;
-  height: 10%;
-  margin-top: -10.4%;
-  background-color: #A9AD8D;
+  height: 87px;
+  margin-top: 0%;
+  background-color: #A89C94;
+  border-top-left-radius: 100px;
+}
+
+.content{
+  height: 3000px;
 }
