@@ -1,26 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Luxe Script Home</title>
   <link rel="stylesheet" href="CSS/style.css" />
 </head>
 <body>
-  <nav>
-    <a href="#" class="nav-toggle-btn"><img src="Media/LuxeScriptLogo.png" alt="Luxe Script company logo" width="100%"/></a>
 
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="markers.html">Markers</a></li>
-      <li><a href="highlighters.html">Highlighters</a></li>
-      <li><a href="pensAndPencils.html">Pens &amp; Pencils</a></li>
-      <li><a href="more.html">More...</a></li>
-    </ul>
-  </nav>
+<img src="Media/LuxeScriptLogo.png" alt="Logo" class="logo" id="logo" width="10%" onclick="toggleNavbar()">
 
-  <div class="content">
+<nav id="navbar">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="markers.html">Markers</a></li>
+    <li><a href="highlighters.html">Highlighters</a></li>
+    <li><a href="pensAndPencils.html">Pens &amp; Pencils</a></li>
+    <li><a href="more.html">More ...</a></li>
+  </ul>
+</nav>
 
-  </div>
+<div class="search">
+  Hello
+</div>
+
+<!-- Add your content here -->
+
+<script>
+  function toggleNavbar() {
+    var navbar = document.getElementById("navbar");
+    navbar.style.display = (navbar.style.display === "block") ? "none" : "block";
+    
+    var logo = document.getElementById("logo");
+    logo.classList.toggle("rotate");
+  }
+</script>
+
 </body>
 </html>
