@@ -131,14 +131,14 @@ input[type = "text"]:focus {
 h1{
   background-color: #124559;
   color: #E7DED0;
-  width: 36%;
-  padding-left: 12%;
+  width: 30%;
+  padding-left: 15%;
   font-size: 72px;
   border-top-right-radius: 200px;
   border-bottom-right-radius: 200px;
 }
 
-.FeaturedItems{
+.CategoryTitles{
   justify-content: right;
 }
 
