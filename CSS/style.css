@@ -28,14 +28,16 @@ ul {
 
 li {
   display: block;
+  border-radius: 10px;
 }
 
-a {
+nav a {
   display: block;
   color: #3E2723;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  border-radius: 10x;
   transition: background-color 0.3s
 }
 
@@ -138,6 +140,86 @@ h1{
 
 .FeaturedItems{
   justify-content: right;
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-card {
+  width: 520px; /* Adjust this value to change the dimensions */
+  perspective: 1000px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  outline: none;
+  backface-visibility: hidden;
+  will-change: transform;
+}
+
+.card-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.product-image, .product-description {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.product-image {
+  transform: rotateY(0deg);
+}
+
+.product-description {
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #d4cbbb;
+  padding: 20px;
+  overflow-y: auto;
+  text-align: left;
+  width: 500px;
+  height: 230px;
+}
+
+.product-card:hover .card-container,
+.product-card:focus .card-container {
+  transform: rotateY(180deg);
+}
+
+.product-card:hover .product-image,
+.product-card:focus .product-image {
+  transform: rotateY(0deg);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+p {
+  color: #3E2723;
+  padding: 0;
+  margin: 0;
 }
 
 .content{
