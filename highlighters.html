@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxe Script Highlighter</title>
+  <link rel="stylesheet" href="CSS/style.css" />
+  <style>
+    
+  </style>
+</head>
+<body>
+
+  <img src="Media/LuxeScriptLogo.png" alt="Logo" class="logo" id="logo" width="10%" onclick="toggleNavbar()">
+
+  <nav id="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="markers.html">Markers</a></li>
+      <li><a href="highlighters.html">Highlighters</a></li>
+      <li><a href="pensAndPencils.html">Pens &amp; Pencils</a></li>
+      <li><a href="more.html">More ...</a></li>
+    </ul>
+  </nav>
+
+  <div class="search">
+    <input type="text" name="text" class="searchInput" placeholder="  Search..." class="input"/>
+    <form id="searchForm" onsubmit="searchPage(); return false;"></form>
+    <button type="submit" class="submitButton"><img class="submitButtonImage" src="Media/search.png" alt="Search icon. Magnifying glass" width="10%"/></button>
+  </div>
+
+  <img class="banner" src="Media/stationaryBanner.jpeg" alt="a banner with stationary supplies scattered around" width="99%" height="auto" />
+
+
+
+  <div class="CategoryTitles">
+    <h1>Highlighters</h1>
+  </div>
+
+  <div class="rowOfProducts">
+    <div class="container">
+      <div class="product-card" tabindex="0" role="button" aria-label="Product Card">
+        <div class="card-container">
+          <div class="product-image">
+            <img src="Media/Highlighter.png" alt="Truly Flurocent Yellow Highlighter">
+          </div>
+          <div class="product-description">
+            <p style="padding-top: 120px;">Introducing our Truly Fluorescent Highlighter – the perfect companion for vibrant and dynamic note-taking! Unleash the power of vivid, neon hues with a 5mm precision tip, ensuring every important detail leaps off the page. Whether you're underlining key concepts, organizing your thoughts, or adding a pop of color to your creative projects, this highlighter delivers unparalleled brightness. The Truly Fluorescent Highlighter not only illuminates your work but also boasts a smooth, smear-resistant formula for flawless highlighting. Upgrade your study or work experience with this essential tool that adds a bold touch to your notes. Stand out and make your mark with the Truly Fluorescent Highlighter – where brilliance meets precision!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="product-card" tabindex="0" role="button" aria-label="Product Card">
+        <div class="card-container">
+          <div class="product-image">
+            <img src="Media/Highlighter2.png" alt="Thick Neon Yellow Highlighter">
+          </div>
+          <div class="product-description">
+            <p style="padding-top: 150px;">Ignite your notes with our Neon Mega Highlighter, a bold and vibrant tool that redefines highlighting with its extra-thick design! Boasting an attention-grabbing, broad 10mm tip, this highlighter ensures your important points and passages stand out effortlessly. The vivid neon colors add a pop of brilliance to your documents, making studying or organizing a visually dynamic experience. Whether you're underlining, color-coding, or creating eye-catching designs, the Neon Mega Highlighter delivers unparalleled thickness for maximum impact. Its smooth and quick-drying ink prevents smudging and provides a consistent flow, ensuring every stroke is bold and clear. Elevate your highlighting game with this mega-sized neon wonder – the ultimate tool for those who like their highlights to be as thick as their ideas!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="rowOfProducts" style="margin-top: 10%;">
+    <div class="container">
+      <div class="product-card" tabindex="0" role="button" aria-label="Product Card">
+        <div class="card-container">
+          <div class="product-image">
+            <img src="Media/Highlighter3.png" alt="thin neon yellow highlighter">
+          </div>
+          <div class="product-description">
+            <p style="padding-top: 90px;">Illuminate your ideas with our Neon Slimline Highlighter, a sleek and precise tool designed for those who appreciate subtlety and precision in their highlighting. With a slender 3mm tip, this highlighter offers fine lines and intricate detailing, making it perfect for annotating text, emphasizing key points, or adding a touch of color to your notes. The neon hues provide a vibrant and captivating visual, ensuring your highlights grab attention without overwhelming the page. The quick-drying, smear-resistant ink guarantees a clean and polished result every time. Elevate your highlighting experience with the Neon Slimline Highlighter – where precision meets fluorescence in the slimmest of strokes!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    function toggleNavbar() {
+      var navbar = document.getElementById("navbar");
+      navbar.style.display = (navbar.style.display === "block") ? "none" : "block";
+      
+      var logo = document.getElementById("logo");
+      logo.classList.toggle("rotate");
+    }
+  </script>
+
+</body>
+</html>
