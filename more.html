@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxe Script More Stationary</title>
+  <link rel="stylesheet" href="CSS/style.css" />
+  <style>
+    
+  </style>
+</head>
+<body>
+
+  <img src="Media/LuxeScriptLogo.png" alt="Logo" class="logo" id="logo" width="10%" onclick="toggleNavbar()">
+
+  <nav id="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="markers.html">Markers</a></li>
+      <li><a href="highlighters.html">Highlighters</a></li>
+      <li><a href="pensAndPencils.html">Pens &amp; Pencils</a></li>
+      <li><a href="more.html">More ...</a></li>
+    </ul>
+  </nav>
+
+  <div class="search">
+    <input type="text" name="text" class="searchInput" placeholder="  Search..." class="input"/>
+    <form id="searchForm" onsubmit="searchPage(); return false;"></form>
+    <button type="submit" class="submitButton"><img class="submitButtonImage" src="Media/search.png" alt="Search icon. Magnifying glass" width="10%"/></button>
+  </div>
+
+  <img class="banner" src="Media/stationaryBanner.jpeg" alt="a banner with stationary supplies scattered around" width="99%" height="auto" />
+
+
+
+  <div class="CategoryTitles">
+    <h1>More Stationary</h1>
+  </div>
+
+  <div class="rowOfProducts">
+    <div class="container">
+      <div class="product-card" tabindex="0" role="button" aria-label="Product Card">
+        <div class="card-container">
+          <div class="product-image">
+            <img src="Media/ink.png" alt="3 different sized bottles of black ink">
+          </div>
+          <div class="product-description">
+            <p style="padding-top: 110px;">Revitalize your writing experience with our Ink Refill Bottles – the ultimate solution for keeping your favorite pens alive and vibrant! These carefully crafted bottles contain premium ink formulations designed to effortlessly replenish your pen's reservoir, ensuring a smooth and consistent flow of ink on paper. The easy-to-use design allows for mess-free refilling, putting you back in control of your writing destiny. Choose from an array of rich and long-lasting colors to personalize your penmanship. Say goodbye to interruptions and hello to continuous creativity with our Ink Refill Bottles – because every word deserves to be penned with precision and flair. Refill, rejuvenate, and rediscover the joy of endless writing possibilities!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="product-card" tabindex="0" role="button" aria-label="Product Card">
+        <div class="card-container">
+          <div class="product-image"> 
+            <img src="Media/ink2.png" alt="Dry Erase marker refilling">
+          </div>
+          <div class="product-description">
+            <p style="padding-top: 110px;">Revitalize your whiteboard experience with our Dry Erase Marker Ink Refill, the perfect solution for keeping your creativity flowing. This easy-to-use refill ensures that your favorite dry erase markers stay vibrant and ready for action. The quick-drying and low-odor ink formula guarantees smooth, consistent lines while preventing smudging. With a hassle-free refill process, you can extend the life of your markers, reducing waste and contributing to a sustainable writing experience. Elevate your productivity by keeping your whiteboard markers in top-notch condition with our reliable Dry Erase Marker Ink Refill – where innovation meets longevity for endless brainstorming sessions and organized planning.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="rowOfProducts" style="margin-top: 10%;">
+    <div class="container">
+      <div class="product-card" tabindex="0" role="button" aria-label="Product Card">
+        <div class="card-container">
+          <div class="product-image">
+            <img src="Media/glueStick.png" alt="A set of 3 different sized glue sticks">
+          </div>
+          <div class="product-description">
+            <p style="padding-top: 90px;">Introducing our versatile Glue Stick – the adhesive solution that effortlessly bonds and sticks with you through every creative project! This mess-free and easy-to-use glue stick is a must-have for crafts, school projects, and office tasks. The smooth application ensures even coverage, allowing you to affix paper, cardboard, and lightweight materials securely. The quick-drying formula means no more waiting around, providing a hassle-free experience for all your bonding needs. Compact and reliable, our Glue Stick is the perfect companion for on-the-go creativity or everyday tasks. Say goodbye to the mess and hello to the precision of our Glue Stick – where bonding brilliance meets simplicity!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="product-card" tabindex="0" role="button" aria-label="Product Card">
+        <div class="card-container">
+          <div class="product-image">
+            <img src="Media/staples.png" alt="Stapler pins silver">
+          </div>
+          <div class="product-description">
+            <p style="padding-top: 110px;">Introducing our Stapler Pins, the unsung heroes of office organization! Crafted with precision, these staples are designed to seamlessly fit and function in your stapler, ensuring reliable and efficient document binding. With a sharp chiseled point, these staples effortlessly penetrate paper stacks, securely fastening your documents without snagging or tearing. The durable construction guarantees a strong grip, preventing pages from coming loose. Perfect for the workplace or home office, our Stapler Pins are the indispensable accessory for maintaining order and professionalism in every staple. Elevate your stapling experience with our high-quality staples – where every pin is a promise of secure and tidy paperwork.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    function toggleNavbar() {
+      var navbar = document.getElementById("navbar");
+      navbar.style.display = (navbar.style.display === "block") ? "none" : "block";
+      
+      var logo = document.getElementById("logo");
+      logo.classList.toggle("rotate");
+    }
+  </script>
+
+</body>
+</html>
